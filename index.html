@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Build a Survey Form</h1>
+    <p id="description">here will be appear a disc</p>
+    <form id="survey-form">
+      Name<label id="name-label" for="name">
+        <input type="text" id="name" placeholder="Name" required
+      /></label>
+
+      Email<label id="email-label" for="email">
+        <input type="email" id="email" placeholder="E-mail" required
+      /></label>
+      Age<label id="number-label" for="number">
+        <input
+          type="number"
+          id="number"
+          required
+          min="10"
+          max="100"
+          placeholder="Number"
+      /></label>
+      <select id="dropdown">
+        <option value="1">Car</option>
+        <option value="2">Home</option>
+        <option value="3">Farm</option>
+      </select>
+      <div>
+        <input type="radio" name="rad" value="1" />male
+        <input type="radio" name="rad" value="2" />female
+      </div>
+      <div>
+        <input type="radio" name="state" value="3" />Graduated
+        <input type="radio" name="state" value="4" />Student
+      </div>
+      <div>
+        <input type="checkbox" value="5" />I read all terms
+        <input type="checkbox" value="6" />I confirm all terms
+      </div>
+      <textarea placeholder="Your comment.."></textarea>
+      <br />
+      <input type="submit" value"Submit" id="submit"/>
+    </form>
+  </body>
+</html>
